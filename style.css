@@ -182,8 +182,8 @@ nav ul li a{
 }
 
 .projectsWrapper{
-  margin: 15px auto;
-  padding: 0 30px;
+  margin: 15px;
+  padding: 0 20px;
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(3, 1fr);
@@ -245,6 +245,31 @@ nav ul li a{
   padding: 10px;
   transform: rotateX(180deg);
   z-index:1;
+}
+.techList{
+  text-align: left;
+}
+
+.boldItem{
+  font-weight: bold;
+}
+.techList li{
+  list-style-type: none;
+}
+.btn{
+  border-radius: 1px;
+  padding: 10px;  
+  color: #fdfefe;
+  font-family: 'Batang', sans-serif;
+  font-size: 14px;
+  margin: 0 5px;
+}
+
+.projectLink{
+  background-color:#09091a;
+}
+.demoLink{
+  background-color:rgba(21, 87, 128, 1);
 }
 .paddingTop{
   padding-bottom: 60px;

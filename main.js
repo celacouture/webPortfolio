@@ -1,32 +1,23 @@
-$(window).scroll(function(){
-	var scroll = $(window).scrollTop();
-	if(scroll > 5){
-		$('header').addClass('scrolled');
-	}
-	else{
-		$('header').removeClass('scrolled');
-	}
-});
-
-$('div.portfolio').scrollTop(300);
-
-$('.portLi').click(function(){
-	var position=$(window).scrollTop(100);
-	return position;
-	
+$('.portBtn').click(function(){
+	$('header').addClass('scrolled');
 })
 
 $('.homeLi').click(function(){
-	var position=$(window).scrollTop(0);
-	return position;
+	$('header').removeClass('scrolled');
 })
 
-$('.bioLi').click(function(){
-	console.log('bio');
+// $('div.portfolio').scrollTop(300);
+
+// $('.portLi').click(function(){
+// 	var position=$(window).scrollTop(100);
+// 	return position;
 	
-})
+// })
 
-
+// $('.homeLi').click(function(){
+// 	var position=$(window).scrollTop(0);
+// 	return position;
+// })
 
 $("a[href*='#']").click(function(e) {
 	e.preventDefault();
