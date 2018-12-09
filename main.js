@@ -6,18 +6,6 @@ $('.homeLi').click(function(){
 	$('header').removeClass('scrolled');
 })
 
-// $('div.portfolio').scrollTop(300);
-
-// $('.portLi').click(function(){
-// 	var position=$(window).scrollTop(100);
-// 	return position;
-	
-// })
-
-// $('.homeLi').click(function(){
-// 	var position=$(window).scrollTop(0);
-// 	return position;
-// })
 
 $("a[href*='#']").click(function(e) {
 	e.preventDefault();
@@ -28,3 +16,7 @@ $("a[href*='#']").click(function(e) {
 		scrollTop: position
 	}, 1000 );
 });
+
+// $('.cardBack').click(function(){
+// 	$
+// })

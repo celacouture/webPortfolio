@@ -11,7 +11,7 @@ header{
   position: fixed;
   top: 0;
   left: 0;
-  height:100vh;
+  height:105vh;
   width: 100%;
   transition:1s;
   padding:0;
@@ -79,7 +79,7 @@ a .portBtn{
   /* margin-left: auto; */
   /* margin-right: auto; */
   width:15%;
-  padding: 10px;
+  padding: 20px;
   font-size: 24px;
 }
 
@@ -133,31 +133,66 @@ nav ul li a{
   margin-right: 10px;
 } */
 
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 770px){
   a .portBtn{
     padding:10px;
     font-size:16px;
     width:20%;
+    margin-left: 10px;
+  }
+
+  nav{
+    margin-right: 20px;
   }
 }
 
 @media only screen and (max-width: 570px){
   .nameTag{
-    margin-top: 30vh;
+    top: calc(45% - 82px);
+    font-size: 48px;
+    left: 1%;
   }
 
   .titleTag{
-    margin-top: 58vh;
+    top: calc(50% - 50px);
+    text-align: left;
+    font-size: 40px;
   }
 
   a .portBtn{
-    margin-top: 80vh;
+    top: calc(66%);
+    left: calc(50% - 70px);
+  }
+
+  nav{
+    float: left;
+    margin-top: -48px;
   }
 }
 
-@media only screen and (max-width: 320px){
+@media only screen and (max-width: 360px){
   .nameTag{
-    font-size: 62px;
+    top: calc(45% - 82px);
+    font-size: 44px;
+    left: 1%;
+  }
+
+  .titleTag{
+    top: calc(50% - 50px);
+    text-align: left;
+    font-size: 34px;
+  }
+
+  a .portBtn{
+    top: calc(66%);
+    left: calc(50% - 70px);
+    padding: 5px;
+    text-align: left;
+  }
+
+  nav{
+    float: left;
+    margin-top: -48px;
   }
 }
 
@@ -174,11 +209,6 @@ nav ul li a{
   border-top: 1px solid rgba(21, 87, 128, 0.58);
   border-bottom: 1px solid rgba(21, 87, 128, 0.58);
   font-family: 'Batang', sans-serif;
-}
-
-.bio{
-  height: 100vh;
-  width:100%;
 }
 
 .projectsWrapper{
@@ -209,6 +239,73 @@ nav ul li a{
 
 }
 
+@media only screen and (max-width: 415px){
+  .projectsWrapper{
+    grid-template-columns: 1fr;
+    padding: 5px;
+    margin-left:4px;
+  }
+
+  .card{
+    width:300px;
+    height:250px;
+    margin: 18px 3px;
+  }
+  .card img{
+    width:100px;
+    height: 50px;
+  }
+}
+
+@media only screen and (max-width: 400px){
+  .projectsWrapper{
+    grid-template-columns: 1fr;
+    padding: 5px;
+    margin-left:0px;
+  }
+  .card{
+    width:300px;
+    height:250px;
+    margin: 18px 0px;
+  }
+  .card img{
+    width:100px;
+    height: 50px;
+  }
+}
+
+@media only screen and (max-width: 360px){
+  .projectsWrapper{
+    grid-template-columns: 1fr;
+    padding: 0px;
+    margin-left:0px;
+  }
+  .card{
+    width:190px;
+    height:225px;
+    margin: 18px 0px;
+  }
+  .card img{
+    width:100px;
+    height:50px;
+  }
+}
+/* .fas{
+  display: none;
+}
+.cardFront:hover .fas{
+  z-index: 5;
+  display: visible;
+  transition: 1s;
+  background-color:rgba(21, 87, 128, 1);
+  padding: 5px;
+  font-size: 20;
+  border-radius: 50%;
+
+
+
+} */
+
 .flipCardInner{
   position: relative;
   width:350px;
@@ -236,7 +333,12 @@ nav ul li a{
   z-index:3;
 }
 
-
+@media only screen and (max-width: 400px){
+  .cardFront{
+    border: 4px solid #09091a;
+    padding: 5px;
+  }
+}
 
 .cardBack{
   text-align:center;
@@ -245,6 +347,20 @@ nav ul li a{
   padding: 10px;
   transform: rotateX(180deg);
   z-index:1;
+}
+
+@media only screen and (max-width: 400px){
+  .cardBack{
+    border: 4px solid #09091a;
+    padding: 5px;
+  }
+}
+
+@media only screen and (max-width: 360px){
+  .cardFront, .cardBack{
+    border: 2px solid #09091a;
+    padding: 2px;
+  }
 }
 .techList{
   text-align: left;
