@@ -387,6 +387,10 @@ nav ul li a{
 .demoLink{
   background-color:rgba(21, 87, 128, 1);
 }
+
+.about{
+  height:100vh;
+}
 .paddingTop{
   padding-bottom: 60px;
 }
